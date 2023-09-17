@@ -21,8 +21,8 @@ preco
 }
 
 //criar um novo objeto a parti de uma class
-let portuguesa = new pizzas('Portuguesa','./portuguesa.jpg','molho,ovo,oregano,queijo,azeitona',42)
-let quatroQueijos = new pizzas('Quatro queijos','./quatro1.png','molho,queijo mussarela, queijo gongorzola, queijo suicço,',35)
+let portuguesa = new pizzas('Portuguesa','./img/portuguesa.jpg','molho,ovo,oregano,queijo,azeitona',42)
+let quatroQueijos = new pizzas('Quatro queijos','./img/quatro1.png','molho,queijo mussarela, queijo gongorzola, queijo suicço,',35)
 let marguerita = new pizzas('Marguerita','#','queijo,tomate, molho,azeitona', 38)
 
 
