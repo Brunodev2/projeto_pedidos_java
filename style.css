@@ -1,0 +1,38 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+
+}
+
+.conteiner{
+    padding: 5px;
+    max-width: 350px;
+   
+display: block;
+margin: auto;
+border: solid grey 1px;
+border-radius: 5px;
+.pedidos{
+    text-align: center;
+}
+
+}
+
+
+.pedido{
+    display: block;
+    margin: auto;
+    width: 250px;
+
+    margin: 10px;
+}
+body{
+    margin-top: 20px;
+}
+
+.imagem{
+    width: 100px;
+    height: 80px;
+   
+}
