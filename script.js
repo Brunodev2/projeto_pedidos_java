@@ -50,25 +50,25 @@ button.addEventListener('click', function(){
 
 
 
-tradicional.innerHTML += `<button id="ing"> <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
+tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
   <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
   <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div> </button>
   <br>
-  <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
+  <button class="pizz" id="pi_queijos"> <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
   <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>
+  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div> </button>
   <br>
-  <div><p>Tipo:${lista.pizzmarguerita.nome}</p></div>
+   <button class="pizz" id="pi_marguerita"> <div><p>Tipo:${lista.pizzmarguerita.nome}</p></div>
   <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
-  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div>
+  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div> </button>
   <br> `;
-especial.innerHTML += ` <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
+especial.innerHTML += ` <button id="ing"> <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
   <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div>
+  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div> </button>
   <br>
   <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
   <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>

@@ -1,21 +1,39 @@
 *{
 margin: 0;
 padding: 0;
-text-decoration: none;
 
+text-decoration: none;
+color:var(--verde)
+
+}
+
+
+:root{
+    --verde: #3E5902;
+    --verdeinv:#3d59024f;
+    --verdeclaro: #BFB304;
+    --mostarda: #f29f05b9;
+    --vermelho: #F20505;
+    --vinho: #A60303;
 }
 
 .conteiner{
-    padding: 5px;
-    max-width: 350px;
    
+padding: 210px 5px 5px 5px;
+max-width: 350px;
+background-color:var(--mostarda);
 display: block;
 margin: auto;
 border: solid grey 1px;
-border-radius: 5px;
+border-radius: 10px;
 .pedidos{
     text-align: center;
 }
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.359);
+background-image: url('/img/pizza17-500.jpg');
+background-position:top;
+background-repeat:no-repeat;
+background-size:360px 200px;
 
 }
 
@@ -23,8 +41,26 @@ border-radius: 5px;
 .pedido{
     display: block;
     margin: auto;
-    width: 250px;
-
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.115);
+    margin: 10px;
+    cursor: pointer;
+    background-color:white;
+    text-decoration: none;
+}
+.pedido:hover{
+    box-shadow: 0 0 0 1px var(--verdeinv),
+    0 0 0 2px var(--verdeinv),0 0 0 5px var(--verdeinv);
+}
+.pedidobox{
+    display: block;
+    margin: auto;
+    width: 280px;
+    border-radius: 5px;
+    border: solid 1px;
     margin: 10px;
 }
 body{
@@ -35,4 +71,16 @@ body{
     width: 100px;
     height: 80px;
    
+}
+
+.pizz{
+    background-color: rgb(245, 240, 240);
+    border: none;
+    width: 100%;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.232);
+    
+}
+.pizz:hover{
+    background-color:rgb(231, 225, 225) ;
+    cursor: pointer;
 }
