@@ -55,7 +55,7 @@ tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> <div><p>Tipo:
   <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
   <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div> </button>
   <br>
-  <button class="pizz" id="pi_queijos"> <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
+  <button class="pizz" id="pi_Queijos"> <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
   <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
   <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div> </button>
@@ -164,3 +164,51 @@ button_ingredientes.addEventListener("click", function () {
      ingredientes.style.display = "none";
    }
 });
+
+
+
+var pizzaPedida = document.querySelector("#pizzaPedida")
+
+var pi_Portuguesa = document.querySelector('#pi_Portuguesa')
+var pi_Queijos = document.querySelector("#pi_Queijos");
+var resultado = document.querySelector("#resultado")
+
+
+
+var pizza12 = ""
+var pizza13 = ""
+
+
+
+pi_Portuguesa.addEventListener('click', function (){
+
+  pizzaPedida.innerHTML += `<div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
+  <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
+  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div> `;
+
+ 
+
+
+    resultado.value += lista.pizzaPortuguesa.preco
+   
+  
+    
+})
+
+
+pi_Queijos.addEventListener("click", function () {
+ 
+  pizzaPedida.innerHTML += `<div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
+  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
+  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>`;
+
+ 
+  
+  
+     resultado.value += lista.pizzaQqueijos.preco ++
+
+   
+});
+

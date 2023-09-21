@@ -18,7 +18,7 @@ color:var(--verde)
 }
 
 .conteiner{
-   
+font-weight: bold;
 padding: 210px 5px 5px 5px;
 max-width: 350px;
 background-color:var(--mostarda);
@@ -39,6 +39,7 @@ background-size:360px 200px;
 
 
 .pedido{
+
     display: block;
     margin: auto;
     width: 280px;
@@ -50,7 +51,9 @@ background-size:360px 200px;
     cursor: pointer;
     background-color:white;
     text-decoration: none;
+    font-weight: bold;
 }
+
 .pedido:hover{
     box-shadow: 0 0 0 1px var(--verdeinv),
     0 0 0 2px var(--verdeinv),0 0 0 5px var(--verdeinv);
@@ -74,11 +77,11 @@ body{
 }
 
 .pizz{
-    background-color: rgb(245, 240, 240);
-    border: none;
+    text-align:left;
+    background-color:white;
+    border: solid 0.2px (--verde);
     width: 100%;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.232);
-    
+    border-radius: 5px;
 }
 .pizz:hover{
     background-color:rgb(231, 225, 225) ;
