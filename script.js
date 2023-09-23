@@ -175,8 +175,6 @@ var resultado = document.querySelector("#resultado")
 
 
 
-var pizza12 = ""
-var pizza13 = ""
 
 
 
@@ -190,7 +188,7 @@ pi_Portuguesa.addEventListener('click', function (){
  
 
 
-    resultado.value += lista.pizzaPortuguesa.preco
+    resultado.value -= lista.pizzaPortuguesa.preco*-1
    
   
     
@@ -204,10 +202,12 @@ pi_Queijos.addEventListener("click", function () {
   <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
   <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>`;
 
- 
-  
-  
-     resultado.value += lista.pizzaQqueijos.preco ++
+
+   const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
+     
+   resultado.value -= lista.pizzaQqueijos.preco*-1
+
+    console.log(formate.format(resultado.value))
 
    
 });
