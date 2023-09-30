@@ -50,10 +50,10 @@ button.addEventListener('click', function(){
 
 
 
-tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
+tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> <div><p>${lista.pizzaPortuguesa.nome}</p></div>
   <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div> </button>
+  <div><p>Ingredientes: ${lista.pizzaPortuguesa.descricao}</p></div>
+  <div><p>Preço: $ ${lista.pizzaPortuguesa.preco} reais</p></div> </button>
   <br>
   <button class="pizz" id="pi_Queijos"> <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
   <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
@@ -167,12 +167,15 @@ button_ingredientes.addEventListener("click", function () {
 
 
 
-var pizzaPedida = document.querySelector("#pizzaPedida")
-
+let pizzaPedida = document.querySelector("#pizzaPedida")
+let pizzaPedida2 = document.querySelector("#pizzaPedida2");
 var pi_Portuguesa = document.querySelector('#pi_Portuguesa')
 var pi_Queijos = document.querySelector("#pi_Queijos");
 var resultado = document.querySelector("#resultado")
-
+let valor = document.querySelector('#valor')
+var Quantidade1 = 0
+var Quantidade2 = 0
+resultado.style.display = 'none'
 
 
 
@@ -180,35 +183,38 @@ var resultado = document.querySelector("#resultado")
 
 pi_Portuguesa.addEventListener('click', function (){
 
-  pizzaPedida.innerHTML += `<div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
+ 
+  pizzaPedida.innerHTML = `<div><p>${lista.pizzaPortuguesa.nome}</p></div>
   <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div> `;
-
+  <div><p>Preço: R$ ${lista.pizzaPortuguesa.preco},00 Reais</p></div> <div><p>Quantidade:${++Quantidade1}<p></div> `;
+  
+  const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
+  
+  
  
-
-
     resultado.value -= lista.pizzaPortuguesa.preco*-1
    
+    valor.innerHTML = formate.format(resultado.value)
   
     
 })
 
-
 pi_Queijos.addEventListener("click", function () {
  
-  pizzaPedida.innerHTML += `<div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
+  
+  pizzaPedida2.innerHTML = `<div><p${lista.pizzaQqueijos.nome}</p></div>
+  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div><span><button>menos</button>
   <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>`;
+  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div><div><p>Quantidade:${++Quantidade2}<p></div> </span> `;
+ 
 
 
    const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
      
-   resultado.value -= lista.pizzaQqueijos.preco*-1
-
-    console.log(formate.format(resultado.value))
-
+   resultado.value -= lista.pizzaQqueijos.preco * -1;
+   
+   valor.innerHTML = formate.format(resultado.value);
    
 });
 
