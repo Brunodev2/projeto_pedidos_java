@@ -64,7 +64,13 @@ tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> <div><p>${lis
   <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
   <div><p>Preço:${lista.pizzmarguerita.preco}</p></div> </button>
+  <br>
+   <button class="pizz" id="pi_calabresa"> <div><p>Tipo:${lista.pizzCalabresa.nome}</p></div>
+  <div><img src="${lista.pizzCalabresa.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzCalabresa.descricao}</p></div>
+  <div><p>Preço:${lista.pizzCalabresa.preco}</p></div> </button>
   <br> `;
+  
 especial.innerHTML += ` <button id="ing"> <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
   <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
@@ -169,12 +175,17 @@ button_ingredientes.addEventListener("click", function () {
 
 let pizzaPedida = document.querySelector("#pizzaPedida")
 let pizzaPedida2 = document.querySelector("#pizzaPedida2");
+let pizzapedida3 = document.querySelector('#pizzaPedida3')
+let pizzapedida4 = document.querySelector('#pizzaPedida4')
 var pi_Portuguesa = document.querySelector('#pi_Portuguesa')
 var pi_Queijos = document.querySelector("#pi_Queijos");
+let pi_marguerita = document.querySelector('#pi_marguerita')
+let pi_calabresa = document.querySelector('#pi_calabresa')
 var resultado = document.querySelector("#resultado")
 let valor = document.querySelector('#valor')
 var Quantidade1 = 0
 var Quantidade2 = 0
+var Quantidade3 = 0
 resultado.style.display = 'none'
 
 
@@ -184,7 +195,7 @@ resultado.style.display = 'none'
 pi_Portuguesa.addEventListener('click', function (){
 
  
-  pizzaPedida.innerHTML = `<div><p>${lista.pizzaPortuguesa.nome}</p></div>
+  pizzaPedida.innerHTML = `<br><div><p>${lista.pizzaPortuguesa.nome}</p></div>
   <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
   <div><p>Preço: R$ ${lista.pizzaPortuguesa.preco},00 Reais</p></div> <div><p>Quantidade:${++Quantidade1}<p></div> `;
@@ -203,8 +214,8 @@ pi_Portuguesa.addEventListener('click', function (){
 pi_Queijos.addEventListener("click", function () {
  
   
-  pizzaPedida2.innerHTML = `<div><p${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div><span><button>menos</button>
+  pizzaPedida2.innerHTML = `<br><div><p>${lista.pizzaQqueijos.nome}</p></div>
+  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
   <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div><div><p>Quantidade:${++Quantidade2}<p></div> </span> `;
  
@@ -218,3 +229,34 @@ pi_Queijos.addEventListener("click", function () {
    
 });
 
+pi_marguerita.addEventListener("click", function(){
+
+pizzapedida3.innerHTML = `<br><div><p>${lista.pizzmarguerita.nome}</p></div>
+  <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
+  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div><div><p>Quantidade:${++Quantidade3}<p></div> </span>`
+
+   const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
+     
+   resultado.value -= lista.pizzmarguerita.preco * -1;
+   
+   valor.innerHTML = formate.format(resultado.value);
+
+
+})
+
+pi_calabresa.addEventListener("click", function(){
+
+pizzapedida4.innerHTML = `<br><div><p>${lista.pizzCalabresa.nome}</p></div>
+  <div><img src="${lista.pizzCalabresa.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzCalabresa.descricao}</p></div>
+  <div><p>Preço:${lista.pizzCalabresa.preco}</p></div><div><p>Quantidade:${++Quantidade3}<p></div> </span>`
+
+   const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
+     
+   resultado.value -= lista.pizzCalabresa.preco * -1;
+   
+   valor.innerHTML = formate.format(resultado.value);
+
+
+})

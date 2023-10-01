@@ -21,9 +21,11 @@ preco
 }
 
 //criar um novo objeto a parti de uma class
-let portuguesa = new pizzas('Portuguesa','./img/portuguesa.jpg','molho, ovo, oregano, queijo, azeitona',42)
-let quatroQueijos = new pizzas('Quatro queijos','./img/quatro1.png','molho,queijo mussarela, queijo gongorzola, queijo suicço,',35)
-let marguerita = new pizzas('Marguerita','#','queijo,tomate, molho,azeitona', 38)
+let portuguesa = new pizzas('Portuguesa','./img/portuguesa-removebg-preview.png','molho, ovo, oregano, queijo, azeitona',42)
+let quatroQueijos = new pizzas('Quatro queijos','./img/pizaquatroqueijos-removebg-preview.png','molho,queijo mussarela, queijo gongorzola, queijo suicço,',35)
+let marguerita = new pizzas('Marguerita','/img/marguerit250-removebg-preview.png','queijo,tomate, molho,azeitona', 38)
+let calabresa = new pizzas('Calabresa','./img/calabresa-removebg-preview.png','calabresa, queijo, tomate, molho,', 35)
+
 
 
 //portuguesa.nome = 'quatro queijos'
@@ -34,7 +36,8 @@ let marguerita = new pizzas('Marguerita','#','queijo,tomate, molho,azeitona', 38
 export default{
     pizzaPortuguesa: portuguesa,
     pizzaQqueijos: quatroQueijos,
-    pizzmarguerita: marguerita
+    pizzmarguerita: marguerita,
+    pizzCalabresa: calabresa
 }
 
 
