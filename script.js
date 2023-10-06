@@ -11,10 +11,9 @@ let button_tradicional = document.querySelector('#btrad')
 let button_espcial = document.querySelector("#besp");
 let button_promocional = document.querySelector("#bpro");
 let button_ingredientes = document.querySelector("#bingre");
-
-
-
 let button = document.querySelector('#button')
+
+
 button.addEventListener('click', function(){
 
     var nome = document.querySelector("#nome");
@@ -71,21 +70,27 @@ tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> <div><p>${lis
   <div><p>Preço:${lista.pizzCalabresa.preco}</p></div> </button>
   <br> `;
   
-especial.innerHTML += ` <button id="ing"> <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
-  <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div> </button>
+especial.innerHTML += ` <button class= "pizz" id="#"> <div><p>${lista.pizzaLombinho.nome}</p></div>
+  <div><img src="${lista.pizzaLombinho.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzaLombinho.descricao}</p></div>
+  <div><p>Preço:${lista.pizzaLombinho.preco}</p></div> </button>
   <br>
-  <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>
+  <button class= "pizz" id="#"> <div><p>${lista.pizzaParaense.nome}</p></div>
+  <div><img src="${lista.pizzaParaense.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzaParaense.descricao}</p></div>
+  <div><p>Preço:${lista.pizzaParaense.preco}</p></div> </button>
   <br>
-  <div><p>Tipo:${lista.pizzmarguerita.nome}</p></div>
-  <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
-  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div>
-  <br>`;
+  <button class= "pizz" id=#> <div><p>${lista.pizzaPalmito.nome}</p></div>
+  <div><img src="${lista.pizzaPalmito.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzaPalmito.descricao}</p></div>
+  <div><p>Preço:${lista.pizzaPalmito.preco}</p></div> </button>
+  <br>
+  <button class= "pizz" id=#"> <div><p>${lista.pizzaPicanha.nome}</p></div>
+  <div><img src="${lista.pizzaPicanha.img}" class="imagem" alt=""></div>
+  <div><p>Descrição:${lista.pizzaPicanha.descricao}</p></div>
+  <div><p>Preço:${lista.pizzaPicanha.preco}</p></div> </button>
+  <br>
+ `;
  promocional.innerHTML += ` <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
   <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
   <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
@@ -131,10 +136,7 @@ ingredientes.innerHTML += `<div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
   <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
   <div><p>Preço:${lista.pizzmarguerita.preco}</p></div>`;
 
-  var butting = document.querySelector('#ing')
-  butting.addEventListener('click', function(){
-    window.alert('oi')
-  })
+  
 
   tradicional.style.display = 'none'
   especial.style.display = 'none'
@@ -177,11 +179,11 @@ let pizzaPedida = document.querySelector("#pizzaPedida")
 let pizzaPedida2 = document.querySelector("#pizzaPedida2");
 let pizzapedida3 = document.querySelector('#pizzaPedida3')
 let pizzapedida4 = document.querySelector('#pizzaPedida4')
-var pi_Portuguesa = document.querySelector('#pi_Portuguesa')
-var pi_Queijos = document.querySelector("#pi_Queijos");
+let pi_Portuguesa = document.querySelector('#pi_Portuguesa')
+let pi_Queijos = document.querySelector("#pi_Queijos");
 let pi_marguerita = document.querySelector('#pi_marguerita')
 let pi_calabresa = document.querySelector('#pi_calabresa')
-var resultado = document.querySelector("#resultado")
+let resultado = document.querySelector("#resultado")
 let valor = document.querySelector('#valor')
 var Quantidade1 = 0
 var Quantidade2 = 0
