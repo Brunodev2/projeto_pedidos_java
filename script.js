@@ -1,5 +1,6 @@
 
 import lista from "./lista.js";
+import skils from "./skils.js";
 
 let listaPizza =  document.querySelector('#listaPizza')
 let tradicional = document.querySelector('#tradicional')
@@ -16,17 +17,17 @@ let button = document.querySelector('#button')
 
 button.addEventListener('click', function(){
 
-    var nome = document.querySelector("#nome");
-    var nomeNovo = nome.value;
-    var email = document.querySelector("#email");
-    var emailNovo = email.value;
-    var telefone = document.querySelector("#telefone");
-    var telefoneNovo = telefone.value;
-    var endereco = document.querySelector("#endereco");
-    var enderecoNovo = endereco.value;
-    var observacao = document.querySelector("#observacao");
-    var observacaoNovo = observacao.value;
-    var pedidoFeito = document.querySelector("#pedidoFeito");
+    let nome = document.querySelector("#nome");
+    let nomeNovo = nome.value;
+    let email = document.querySelector("#email");
+    let emailNovo = email.value;
+    let telefone = document.querySelector("#telefone");
+    let telefoneNovo = telefone.value;
+    let endereco = document.querySelector("#endereco");
+    let enderecoNovo = endereco.value;
+    let observacao = document.querySelector("#observacao");
+    let observacaoNovo = observacao.value;
+    let pedidoFeito = document.querySelector("#pedidoFeito");
     if (
       nomeNovo === "" ||
       emailNovo === "" ||
@@ -185,9 +186,10 @@ let pi_marguerita = document.querySelector('#pi_marguerita')
 let pi_calabresa = document.querySelector('#pi_calabresa')
 let resultado = document.querySelector("#resultado")
 let valor = document.querySelector('#valor')
-var Quantidade1 = 0
-var Quantidade2 = 0
-var Quantidade3 = 0
+let Quantidade1 = 0
+let Quantidade2 = 0
+let Quantidade3 = 0
+let Quantidade4 = 0
 resultado.style.display = 'none'
 
 
@@ -196,69 +198,43 @@ resultado.style.display = 'none'
 
 pi_Portuguesa.addEventListener('click', function (){
 
- 
-  pizzaPedida.innerHTML = `<br><div><p>${lista.pizzaPortuguesa.nome}</p></div>
-  <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço: R$ ${lista.pizzaPortuguesa.preco},00 Reais</p></div> <div><p>Quantidade:${++Quantidade1}<p></div> `;
-  
-  const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
-  
-  
- 
+  pizzaPedida.innerHTML = skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco,++Quantidade1)
     resultado.value -= lista.pizzaPortuguesa.preco*-1
    
-    valor.innerHTML = formate.format(resultado.value)
+    valor.innerHTML = skils.moeda(resultado.value)
   
     
 })
 
 pi_Queijos.addEventListener("click", function () {
- 
-  
-  pizzaPedida2.innerHTML = `<br><div><p>${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div><div><p>Quantidade:${++Quantidade2}<p></div> </span> `;
- 
 
-
-   const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
-     
+  pizzaPedida2.innerHTML = skils.listaNNova(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco,++Quantidade2);
+ 
    resultado.value -= lista.pizzaQqueijos.preco * -1;
    
-   valor.innerHTML = formate.format(resultado.value);
-   
+   valor.innerHTML = skils.moeda(resultado.value)
+
 });
+
 
 pi_marguerita.addEventListener("click", function(){
 
-pizzapedida3.innerHTML = `<br><div><p>${lista.pizzmarguerita.nome}</p></div>
-  <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
-  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div><div><p>Quantidade:${++Quantidade3}<p></div> </span>`
+pizzapedida3.innerHTML = skils.listaNNova(lista.pizzmarguerita.nome,lista.pizzmarguerita.img,lista.pizzmarguerita.descricao,lista.pizzmarguerita.preco,++Quantidade3)
 
-   const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
-     
    resultado.value -= lista.pizzmarguerita.preco * -1;
    
-   valor.innerHTML = formate.format(resultado.value);
+   valor.innerHTML = skils.moeda(resultado.value);
 
 
 })
 
 pi_calabresa.addEventListener("click", function(){
 
-pizzapedida4.innerHTML = `<br><div><p>${lista.pizzCalabresa.nome}</p></div>
-  <div><img src="${lista.pizzCalabresa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzCalabresa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzCalabresa.preco}</p></div><div><p>Quantidade:${++Quantidade3}<p></div> </span>`
-
-   const formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
+pizzapedida4.innerHTML = skils.listaNNova(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco,++Quantidade4);
      
    resultado.value -= lista.pizzCalabresa.preco * -1;
    
-   valor.innerHTML = formate.format(resultado.value);
+   valor.innerHTML = skils.moeda(resultado.value);
 
 
 })
