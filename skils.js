@@ -20,9 +20,21 @@ function listaNovaa(nome,imagem,descricao,preco,quantidade){
 
 }
 
+function listaNovab(nome,imagem,descricao,preco,quantidade){
+    let listaNova2;
+   listaNova2 = ` <br><div><p>${nome}</p></div>
+  <div><img src="${imagem}" class="imagem" alt=""></div>
+  <div><p>Descrição:${descricao}</p></div>
+  <div><p>Preço:${preco}</p></div> </span>`
+
+  return listaNova2
+
+}
+
 
 export default{
     moeda:currency,
-    listaNNova: listaNovaa
+    listaNNova: listaNovaa,
+    listaNNova2: listaNovab
 
 }

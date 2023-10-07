@@ -50,92 +50,43 @@ button.addEventListener('click', function(){
 
 
 
-tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> <div><p>${lista.pizzaPortuguesa.nome}</p></div>
-  <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
-  <div><p>Ingredientes: ${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço: $ ${lista.pizzaPortuguesa.preco} reais</p></div> </button>
+tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> ${skils.listaNNova2(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco)} </button>
   <br>
-  <button class="pizz" id="pi_Queijos"> <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div> </button>
+  <button class="pizz" id="pi_Queijos"> ${skils.listaNNova2(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco)} </button>
   <br>
-   <button class="pizz" id="pi_marguerita"> <div><p>Tipo:${lista.pizzmarguerita.nome}</p></div>
-  <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
-  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div> </button>
+   <button class="pizz" id="pi_marguerita"> ${skils.listaNNova2(lista.pizzmarguerita.nome,lista.pizzmarguerita.img,lista.pizzmarguerita.descricao,lista.pizzmarguerita.preco)}</button>
   <br>
-   <button class="pizz" id="pi_calabresa"> <div><p>Tipo:${lista.pizzCalabresa.nome}</p></div>
-  <div><img src="${lista.pizzCalabresa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzCalabresa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzCalabresa.preco}</p></div> </button>
+   <button class="pizz" id="pi_calabresa"> ${skils.listaNNova2(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco)} </button>
   <br> `;
   
-especial.innerHTML += ` <button class= "pizz" id="#"> <div><p>${lista.pizzaLombinho.nome}</p></div>
-  <div><img src="${lista.pizzaLombinho.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaLombinho.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaLombinho.preco}</p></div> </button>
+especial.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova2(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
   <br>
-  <button class= "pizz" id="#"> <div><p>${lista.pizzaParaense.nome}</p></div>
-  <div><img src="${lista.pizzaParaense.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaParaense.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaParaense.preco}</p></div> </button>
+  <button class= "pizz" id="#"> ${skils.listaNNova2(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
   <br>
-  <button class= "pizz" id=#> <div><p>${lista.pizzaPalmito.nome}</p></div>
-  <div><img src="${lista.pizzaPalmito.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPalmito.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPalmito.preco}</p></div> </button>
+  <button class= "pizz" id=#> ${skils.listaNNova2(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
   <br>
-  <button class= "pizz" id=#"> <div><p>${lista.pizzaPicanha.nome}</p></div>
-  <div><img src="${lista.pizzaPicanha.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPicanha.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPicanha.preco}</p></div> </button>
-  <br>
+  <button class= "pizz" id=#"> ${skils.listaNNova2(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
  `;
- promocional.innerHTML += ` <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
-  <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div>
-  <br>
-  <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>
-  <br>
-  <div><p>Tipo:${lista.pizzmarguerita.nome}</p></div>
-  <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
-  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div>
-  <br>
-  <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
-  <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div>
-  <br>`;
-ingredientes.innerHTML += `<div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>
-  <br>
-  <div><p>Tipo:${lista.pizzmarguerita.nome}</p></div>
-  <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
-  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div>
-  <br>
-  <div><p>Tipo:${lista.pizzaPortuguesa.nome}</p></div>
-  <div><img src="${lista.pizzaPortuguesa.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaPortuguesa.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaPortuguesa.preco}</p></div>
-  <br>
-  <div><p>Tipo:${lista.pizzaQqueijos.nome}</p></div>
-  <div><img src="${lista.pizzaQqueijos.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzaQqueijos.descricao}</p></div>
-  <div><p>Preço:${lista.pizzaQqueijos.preco}</p></div>
-  <br>
-  <div><p>Tipo:${lista.pizzmarguerita.nome}</p></div>
-  <div><img src="${lista.pizzmarguerita.img}" class="imagem" alt=""></div>
-  <div><p>Descrição:${lista.pizzmarguerita.descricao}</p></div>
-  <div><p>Preço:${lista.pizzmarguerita.preco}</p></div>`;
+ promocional.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova2(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
+ <br>
+ <button class= "pizz" id="#"> ${skils.listaNNova2(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
+ <br>
+ <button class= "pizz" id=#> ${skils.listaNNova2(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
+ <br>
+ <button class= "pizz" id=#"> ${skils.listaNNova2(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
+`;
+ingredientes.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova2(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
+<br>
+<button class= "pizz" id="#"> ${skils.listaNNova2(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
+<br>
+<button class= "pizz" id=#> ${skils.listaNNova2(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
+<br>
+<button class= "pizz" id=#"> ${skils.listaNNova2(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
+<br>
+<button class= "pizz" id=#> ${skils.listaNNova2(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
+<br>
+<button class= "pizz" id=#"> ${skils.listaNNova2(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
+`;
 
   
 
