@@ -149,13 +149,34 @@ resultado.style.display = 'none'
 
 pi_Portuguesa.addEventListener('click', function (){
 
-  pizzaPedida.innerHTML = skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco,++Quantidade1)
+  pizzaPedida.innerHTML = `<span id='menos' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco,++Quantidade1)} `
+
     resultado.value -= lista.pizzaPortuguesa.preco*-1
    
     valor.innerHTML = skils.moeda(resultado.value)
-  
-    
+
+
+    let botaomenos = document.querySelector('#menos')
+
+       botaomenos.addEventListener("click", function(){
+
+        resultado.value -= lista.pizzaPortuguesa.preco
+        
+        valor.innerHTML = skils.moeda(resultado.value)
+
+        Quantidade1--
+
+        console.log(Quantidade1)
+        if(Quantidade1==0){
+          pizzaPedida.innerHTML = ''
+        }
+        
+
+      
 })
+})
+
+
 
 pi_Queijos.addEventListener("click", function () {
 
@@ -189,3 +210,5 @@ pizzapedida4.innerHTML = skils.listaNNova(lista.pizzCalabresa.nome,lista.pizzCal
 
 
 })
+
+

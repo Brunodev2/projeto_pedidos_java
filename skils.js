@@ -20,7 +20,7 @@ function listaNovaa(nome,imagem,descricao,preco,quantidade){
 
 }
 
-function listaNovab(nome,imagem,descricao,preco,quantidade){
+function listaNovab(nome,imagem,descricao,preco,){
     let listaNova2;
    listaNova2 = ` <br><div><p>${nome}</p></div>
   <div><img src="${imagem}" class="imagem" alt=""></div>
