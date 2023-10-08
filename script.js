@@ -137,6 +137,7 @@ let pi_marguerita = document.querySelector('#pi_marguerita')
 let pi_calabresa = document.querySelector('#pi_calabresa')
 let resultado = document.querySelector("#resultado")
 let valor = document.querySelector('#valor')
+
 let Quantidade1 = 0
 let Quantidade2 = 0
 let Quantidade3 = 0
@@ -148,8 +149,12 @@ resultado.style.display = 'none'
 
 
 pi_Portuguesa.addEventListener('click', function (){
+   
+  pizzaPedida.innerHTML = `<span id='menos' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco)} `;
 
-  pizzaPedida.innerHTML = `<span id='menos' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco,++Quantidade1)} `
+let quantidadeFinal = document.querySelector("#quantidadeFinal");
+
+  quantidadeFinal.innerHTML = ++Quantidade1
 
     resultado.value -= lista.pizzaPortuguesa.preco*-1
    
@@ -164,7 +169,9 @@ pi_Portuguesa.addEventListener('click', function (){
         
         valor.innerHTML = skils.moeda(resultado.value)
 
-        Quantidade1--
+         quantidadeFinal.innerHTML = --Quantidade1;
+
+      
 
         console.log(Quantidade1)
         if(Quantidade1==0){
