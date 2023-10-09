@@ -30,7 +30,7 @@ border-radius: 10px;
     text-align: center;
 }
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.359);
-background-image: url('./img/pizza17-500.jpg');
+background-image: url('/img/pizza17-500nova.png');
 background-position:top;
 background-repeat:no-repeat;
 background-size:360px 200px;
