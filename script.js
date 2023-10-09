@@ -150,7 +150,7 @@ resultado.style.display = 'none'
 
 pi_Portuguesa.addEventListener('click', function (){
    
-  pizzaPedida.innerHTML = `<span id='menos' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco)} `;
+  pizzaPedida.innerHTML = `<span id='menos' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco)} <span class="botaox" id="quantidadeFinal"> </span>`;
 
 let quantidadeFinal = document.querySelector("#quantidadeFinal");
 
@@ -158,62 +158,116 @@ let quantidadeFinal = document.querySelector("#quantidadeFinal");
 
     resultado.value -= lista.pizzaPortuguesa.preco*-1
    
-    valor.innerHTML = skils.moeda(resultado.value)
+    valor.innerHTML = skils.moeda(resultado.value) // a função moeda modifica o valor para moeda corrente
 
 
     let botaomenos = document.querySelector('#menos')
 
        botaomenos.addEventListener("click", function(){
+         resultado.value -= lista.pizzaPortuguesa.preco;
 
-        resultado.value -= lista.pizzaPortuguesa.preco
-        
-        valor.innerHTML = skils.moeda(resultado.value)
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
 
          quantidadeFinal.innerHTML = --Quantidade1;
 
-      
-
-        console.log(Quantidade1)
-        if(Quantidade1==0){
-          pizzaPedida.innerHTML = ''
-        }
-        
-
-      
-})
+         
+         if (Quantidade1 == 0) {
+           pizzaPedida.innerHTML = "";
+         }
+       })
 })
 
 
 
 pi_Queijos.addEventListener("click", function () {
 
-  pizzaPedida2.innerHTML = skils.listaNNova(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco,++Quantidade2);
+  pizzaPedida2.innerHTML =`<span id='menos1' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco)}<span class="botaox" id="quantidadeFinal2"> </span>`;
+
+  let quantidadeFinal2 = document.querySelector("#quantidadeFinal2");
+
+  quantidadeFinal2.innerHTML = ++Quantidade2;
  
    resultado.value -= lista.pizzaQqueijos.preco * -1;
    
    valor.innerHTML = skils.moeda(resultado.value)
+
+   let botaomenos = document.querySelector('#menos1')
+
+       botaomenos.addEventListener("click", function(){
+
+         resultado.value -= lista.pizzaQqueijos.preco;
+
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
+
+         quantidadeFinal2.innerHTML = --Quantidade2;
+
+         
+         if (Quantidade2 == 0) {
+           pizzaPedida2.innerHTML = "";
+         }
+       })
 
 });
 
 
 pi_marguerita.addEventListener("click", function(){
 
-pizzapedida3.innerHTML = skils.listaNNova(lista.pizzmarguerita.nome,lista.pizzmarguerita.img,lista.pizzmarguerita.descricao,lista.pizzmarguerita.preco,++Quantidade3)
+pizzapedida3.innerHTML = `<span id='menos3' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzmarguerita.nome,lista.pizzmarguerita.img,lista.pizzmarguerita.descricao,lista.pizzmarguerita.preco)}<span class="botaox" id="quantidadeFinal3"> </span> `
+  
+   let quantidadeFinal3 = document.querySelector("#quantidadeFinal3");
+
+   quantidadeFinal3.innerHTML = ++Quantidade3;
+
 
    resultado.value -= lista.pizzmarguerita.preco * -1;
    
    valor.innerHTML = skils.moeda(resultado.value);
 
+  let botaomenos = document.querySelector('#menos3')
+
+       botaomenos.addEventListener("click", function(){
+
+         resultado.value -= lista.pizzmarguerita.preco;
+
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
+
+         quantidadeFinal3.innerHTML = --Quantidade3;
+
+         
+         if (Quantidade3 == 0) {
+           pizzapedida3.innerHTML = "";
+         }
+       })
 
 })
 
 pi_calabresa.addEventListener("click", function(){
 
-pizzapedida4.innerHTML = skils.listaNNova(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco,++Quantidade4);
-     
+pizzapedida4.innerHTML = `<span id='menos4' class="material-symbols-outlined">disabled_by_default</span>  ${skils.listaNNova(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco,)} <span class="botaox" id="quantidadeFinal4"> </span>`;
+
+let quantidadeFinal4 = document.querySelector("#quantidadeFinal4");
+   quantidadeFinal4.innerHTML = ++Quantidade4;
+
+
    resultado.value -= lista.pizzCalabresa.preco * -1;
    
    valor.innerHTML = skils.moeda(resultado.value);
+
+    let botaomenos = document.querySelector('#menos4')
+
+       botaomenos.addEventListener("click", function(){
+
+         resultado.value -= lista.pizzCalabresa.preco;
+
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
+
+         quantidadeFinal4.innerHTML = --Quantidade4;
+
+         
+         if (Quantidade4 == 0) {
+           pizzapedida4.innerHTML = "";
+         }
+       })
 
 
 })

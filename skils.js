@@ -14,7 +14,7 @@ function listaNovaa(nome,imagem,descricao,preco){
    listaNova = ` <br><div><p>${nome}</p></div>
   <div><img src="${imagem}" class="imagem" alt=""></div>
   <div><p>Descrição:${descricao}</p></div>
-  <div><p>Preço:${preco}</p></div><div><p>Quantidade: <div id="quantidadeFinal"> </div> <p></div> `;
+  <div><p>Preço:${preco}</p></div> <p>Quantidade:<p> `;
 
   return listaNova
 

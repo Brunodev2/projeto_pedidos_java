@@ -98,11 +98,21 @@ body{
     padding-top: 5px;
 }
 
-#menos{
+
+.material-symbols-outlined{
     width: 50px;
     position:relative;
     top: 30px;
     left: 280px;
     border-radius: 5px;
     box-shadow: 0px 0px opx 1px rgba(72, 71, 71, 0.018);
+    cursor: pointer;
+
+}
+
+.botaox{
+display: inline;
+position:relative;
+left: 90px;
+top: -18px;
 }
