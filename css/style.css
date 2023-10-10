@@ -19,7 +19,7 @@ color:var(--verde)
 
 .conteiner{
 font-weight: bold;
-padding: 210px 5px 5px 5px;
+padding: 0px 5px 5px 5px;
 max-width: 350px;
 background-color:var(--mostarda);
 display: block;
@@ -29,14 +29,22 @@ border-radius: 10px;
 .pedidos{
     text-align: center;
 }
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.359);
-background-image: url('/img/pizza17-500nova.png');
-background-position:top;
-background-repeat:no-repeat;
-background-size:360px 200px;
+
 
 }
 
+#head{
+    width: 350px;
+    height: 200px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.359);
+background-image: url('/img/pizza17-500nova.png');
+
+background-repeat:no-repeat;
+position: relative;
+
+border-radius: 10px 10px 0px 0px;
+
+}
 
 .pedido{
 
