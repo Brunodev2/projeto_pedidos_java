@@ -5,7 +5,16 @@ padding: 0;
 text-decoration: none;
 color:var(--verde)
 
+
 }
+
+
+  /*  font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
 
 
 :root{
@@ -18,8 +27,9 @@ color:var(--verde)
 }
 
 .conteiner{
-font-weight: bold;
-padding: 0px 5px 5px 5px;
+    font-family: 'Kaushan Script', cursive;
+
+padding: 5px 5px 5px 5px;
 max-width: 350px;
 background-color:var(--mostarda);
 display: block;
@@ -44,6 +54,12 @@ position: relative;
 
 border-radius: 10px 10px 0px 0px;
 
+}
+
+.pedidos{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .pedido{
