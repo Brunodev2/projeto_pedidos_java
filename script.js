@@ -49,7 +49,7 @@ button.addEventListener('click', function(){
 });
 
 
-
+//pizzas tradicionais
 tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> ${skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco)} </button>
   <br>
   <button class="pizz" id="pi_Queijos"> ${skils.listaNNova(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco)} </button>
@@ -58,7 +58,7 @@ tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> ${skils.lista
   <br>
    <button class="pizz" id="pi_calabresa"> ${skils.listaNNova(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco)} </button>
   <br> `;
-  
+  //pizzas especiais
 especial.innerHTML += ` <button class= "pizz" id="pi_lombinho">${skils.listaNNova(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
   <br>
   <button class= "pizz" id="pi_paraense"> ${skils.listaNNova(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
@@ -67,6 +67,7 @@ especial.innerHTML += ` <button class= "pizz" id="pi_lombinho">${skils.listaNNov
   <br>
   <button class= "pizz" id="pi_picanha"> ${skils.listaNNova(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</button>
  `;
+ //pizzas promocionais
  promocional.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
  <br>
  <button class= "pizz" id="#"> ${skils.listaNNova(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
@@ -75,6 +76,7 @@ especial.innerHTML += ` <button class= "pizz" id="pi_lombinho">${skils.listaNNov
  <br>
  <button class= "pizz" id=#"> ${skils.listaNNova(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
 `;
+//ingredientes extras
 ingredientes.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
 <br>
 <button class= "pizz" id="#"> ${skils.listaNNova(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
@@ -161,7 +163,7 @@ resultado.style.display = 'none'
 
 
 
-
+//lista de pizzas tradicionais
 
 pi_Portuguesa.addEventListener('click', function (){
    
@@ -287,6 +289,7 @@ let quantidadeFinal4 = document.querySelector("#quantidadeFinal4");
 
 })
 
+// lista de pizzas especiais
 
 pi_lombinho.addEventListener('click',()=>{
 
@@ -408,3 +411,6 @@ pi_picanha.addEventListener('click',()=>{
        })
 
 })
+
+// lista de pizzas promocionais
+
