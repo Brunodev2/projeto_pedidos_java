@@ -59,7 +59,7 @@ tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> ${skils.lista
    <button class="pizz" id="pi_calabresa"> ${skils.listaNNova2(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco)} </button>
   <br> `;
   
-especial.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova2(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
+especial.innerHTML += ` <button class= "pizz" id="lombinho">${skils.listaNNova2(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
   <br>
   <button class= "pizz" id="#"> ${skils.listaNNova2(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
   <br>
