@@ -28,7 +28,7 @@ let calabresa = new pizzas('Calabresa','./img/calabresa-removebg-preview.png','c
 let modadacasa_especial =  new pizzas('Moda da casa', '#', 'lombinho, molho, cebola, queijo, aceitona', 55)
 let paraense = new pizzas('Paraense', '#','camararão, jambu, queijo, molho, aceitona', 65)
 let palmito = new pizzas('Palmito', '#','Palmito, molho, queijo, aceitona, presunto, cebola', 75)
-let Picanha = new pizzas('Picanha com batata', '#', 'Picanha, batata frita, molho, aceitona, cebola, queijo')
+let Picanha = new pizzas('Picanha com batata', '#', 'Picanha, batata frita, molho, aceitona, cebola, queijo',68)
 
 
 
