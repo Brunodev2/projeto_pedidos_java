@@ -9,6 +9,19 @@ function currency(valor){
     return resultado2
 }
 
+
+function listaNovab(nome,imagem,descricao,preco){
+    let formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
+    let listaNova;
+   listaNova = ` <br><div><p>${nome}</p></div>
+  <div><img src="${imagem}" class="imagem" alt=""></div>
+  <div><p>Descrição:${descricao}</p></div>
+  <div><p>Preço:${formate.format(preco)}</p></div>`;
+
+  return listaNova
+
+}
+
 function listaNovaa(nome,imagem,descricao,preco){
     let formate = new Intl.NumberFormat("pt-BR",{style:"currency", currency:'BRL', minimumFractionDigits:2,})
     let listaNova;
@@ -27,6 +40,7 @@ function listaNovaa(nome,imagem,descricao,preco){
 
 export default{
     moeda:currency,
-    listaNNova: listaNovaa
+    listaNNova: listaNovaa,
+    listaNNovab:listaNovab
 
 }

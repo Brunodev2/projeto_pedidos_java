@@ -50,44 +50,43 @@ button.addEventListener('click', function(){
 
 
 //pizzas tradicionais
-tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> ${skils.listaNNova(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco)} </button>
+tradicional.innerHTML += `<button class="pizz" id="pi_Portuguesa"> ${skils.listaNNovab(lista.pizzaPortuguesa.nome,lista.pizzaPortuguesa.img,lista.pizzaPortuguesa.descricao,lista.pizzaPortuguesa.preco)} </button>
   <br>
-  <button class="pizz" id="pi_Queijos"> ${skils.listaNNova(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco)} </button>
+  <button class="pizz" id="pi_Queijos"> ${skils.listaNNovab(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco)} </button>
   <br>
-   <button class="pizz" id="pi_marguerita"> ${skils.listaNNova(lista.pizzmarguerita.nome,lista.pizzmarguerita.img,lista.pizzmarguerita.descricao,lista.pizzmarguerita.preco)}</button>
+   <button class="pizz" id="pi_marguerita"> ${skils.listaNNovab(lista.pizzmarguerita.nome,lista.pizzmarguerita.img,lista.pizzmarguerita.descricao,lista.pizzmarguerita.preco)}</button>
   <br>
-   <button class="pizz" id="pi_calabresa"> ${skils.listaNNova(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco)} </button>
+   <button class="pizz" id="pi_calabresa"> ${skils.listaNNovab(lista.pizzCalabresa.nome,lista.pizzCalabresa.img,lista.pizzCalabresa.descricao,lista.pizzCalabresa.preco)} </button>
   <br> `;
   //pizzas especiais
-especial.innerHTML += ` <button class= "pizz" id="pi_lombinho">${skils.listaNNova(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
+especial.innerHTML += ` <button class= "pizz" id="pi_lombinho">${skils.listaNNovab(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
   <br>
-  <button class= "pizz" id="pi_paraense"> ${skils.listaNNova(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
+  <button class= "pizz" id="pi_paraense"> ${skils.listaNNovab(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
   <br>
-  <button class= "pizz" id="pi_palmito"> ${skils.listaNNova(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
+  <button class= "pizz" id="pi_palmito"> ${skils.listaNNovab(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
   <br>
-  <button class= "pizz" id="pi_picanha"> ${skils.listaNNova(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</button>
+  <button class= "pizz" id="pi_picanha"> ${skils.listaNNovab(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</button>
  `;
  //pizzas promocionais
- promocional.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
+ promocional.innerHTML += ` <button class= "pizz" id="pi_mista">${skils.listaNNovab(lista.pizzaMista.nome,lista.pizzaMista.img,lista.pizzaMista.descricao,lista.pizzaMista.preco)} </button>
  <br>
- <button class= "pizz" id="#"> ${skils.listaNNova(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
+ <button class= "pizz" id="pi_presunto"> ${skils.listaNNovab(lista.pizzaPresunto.nome,lista.pizzaPresunto.img,lista.pizzaPresunto.descricao,lista.pizzaPresunto.preco)} </button>
  <br>
- <button class= "pizz" id=#> ${skils.listaNNova(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
+ <button class= "pizz" id=pi_frangokatu> ${skils.listaNNovab(lista.pizzaFrangokatupiri.nome,lista.pizzaFrangokatupiri.img,lista.pizzaFrangokatupiri.descricao,lista.pizzaFrangokatupiri.preco)} </button>
  <br>
- <button class= "pizz" id=#"> ${skils.listaNNova(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
-`;
+ <button class= "pizz" id=pi_mussarela> ${skils.listaNNovab(lista.pizzaMussarela.nome,lista.pizzaMussarela.img,lista.pizzaMussarela.descricao,lista.pizzaMussarela.preco)} </button> `;
 //ingredientes extras
-ingredientes.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNova(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
+ingredientes.innerHTML += ` <button class= "pizz" id="#">${skils.listaNNovab(lista.pizzaLombinho.nome,lista.pizzaLombinho.img,lista.pizzaLombinho.descricao,lista.pizzaLombinho.preco)} </button>
 <br>
-<button class= "pizz" id="#"> ${skils.listaNNova(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
+<button class= "pizz" id="#"> ${skils.listaNNovab(lista.pizzaParaense.nome,lista.pizzaParaense.img,lista.pizzaParaense.descricao,lista.pizzaParaense.preco)} </button>
 <br>
-<button class= "pizz" id=#> ${skils.listaNNova(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
+<button class= "pizz" id=#> ${skils.listaNNovab(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
 <br>
-<button class= "pizz" id=#"> ${skils.listaNNova(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
+<button class= "pizz" id=#"> ${skils.listaNNovab(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
 <br>
-<button class= "pizz" id=#> ${skils.listaNNova(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
+<button class= "pizz" id=#> ${skils.listaNNovab(lista.pizzaPalmito.nome,lista.pizzaPalmito.img,lista.pizzaPalmito.descricao,lista.pizzaPalmito.preco)} </button>
 <br>
-<button class= "pizz" id=#"> ${skils.listaNNova(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
+<button class= "pizz" id=#"> ${skils.listaNNovab(lista.pizzaPicanha.nome,lista.pizzaPicanha.img,lista.pizzaPicanha.descricao,lista.pizzaPicanha.preco)}</pizzaPicanha
 `;
 
   
@@ -137,16 +136,28 @@ let pizzapedida5 = document.querySelector("#pizzaPedida5");
 let pizzapedida6 = document.querySelector("#pizzaPedida6");
 let pizzapedida7 = document.querySelector("#pizzaPedida7");
 let pizzapedida8 = document.querySelector("#pizzaPedida8");
+let pizzapedida9 = document.querySelector("#pizzaPedida9");
+let pizzapedida10 = document.querySelector("#pizzaPedida10");
+let pizzapedida11 = document.querySelector("#pizzaPedida11");
+let pizzapedida12 = document.querySelector("#pizzaPedida12");
 
 
+//tradicionais
 let pi_Portuguesa = document.querySelector('#pi_Portuguesa')
 let pi_Queijos = document.querySelector("#pi_Queijos");
 let pi_marguerita = document.querySelector('#pi_marguerita')
 let pi_calabresa = document.querySelector('#pi_calabresa')
+//especiais
 let pi_lombinho = document.querySelector("#pi_lombinho");
 let pi_paraense = document.querySelector("#pi_paraense")
 let pi_palmito = document.querySelector("#pi_palmito")
 let pi_picanha = document.querySelector("#pi_picanha")
+//promocioanis
+let pi_frangokatu = document.querySelector('#pi_frangokatu')
+let pi_mista = document.querySelector('#pi_mista')
+let pi_mussarela = document.querySelector("#pi_mussarela");
+let pi_presunto = document.querySelector('#pi_presunto')
+//ingredientes extras
 
 let resultado = document.querySelector("#resultado")
 let valor = document.querySelector('#valor')
@@ -159,6 +170,11 @@ let Quantidade5 = 0;
 let Quantidade6 = 0;
 let Quantidade7 = 0;
 let Quantidade8 = 0;
+let Quantidade9 = 0;
+let Quantidade10 = 0;
+let Quantidade11 = 0;
+let Quantidade12 = 0;
+
 resultado.style.display = 'none'
 
 
@@ -414,3 +430,124 @@ pi_picanha.addEventListener('click',()=>{
 
 // lista de pizzas promocionais
 
+
+pi_mista.addEventListener('click',()=>{
+
+pizzapedida9.innerHTML=` <span id='menos9' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaMista.nome,lista.pizzaMista.img,lista.pizzaMista.descricao,lista.pizzaMista.preco)} <span class="botaox" id="quantidadeFinal9"> </span>`;
+
+let quantidadeFinal9 = document.querySelector("#quantidadeFinal9");
+   quantidadeFinal9.innerHTML = ++Quantidade9;
+
+
+   resultado.value -= lista.pizzaMista.preco * -1;
+   
+   valor.innerHTML = skils.moeda(resultado.value);
+
+    let botaomenos = document.querySelector('#menos9')
+
+       botaomenos.addEventListener("click", function(){
+
+         resultado.value -= lista.pizzaMista.preco;
+
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
+
+         quantidadeFinal9.innerHTML = --Quantidade9;
+
+         
+         if (Quantidade9 == 0) {
+           pizzapedida9.innerHTML = "";
+         }
+       })
+
+})
+
+pi_presunto.addEventListener('click',()=>{
+
+pizzapedida10.innerHTML=` <span id='menos10' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaPresunto.nome,lista.pizzaPresunto.img,lista.pizzaPresunto.descricao,lista.pizzaPresunto.preco)} <span class="botaox" id="quantidadeFinal10"> </span>`;
+
+let quantidadeFinal10 = document.querySelector("#quantidadeFinal10");
+   quantidadeFinal10.innerHTML = ++Quantidade10;
+
+
+   resultado.value -= lista.pizzaPresunto.preco * -1;
+   
+   valor.innerHTML = skils.moeda(resultado.value);
+
+    let botaomenos = document.querySelector('#menos10')
+
+       botaomenos.addEventListener("click", function(){
+
+         resultado.value -= lista.pizzaPresunto.preco;
+
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
+
+         quantidadeFinal10.innerHTML = --Quantidade10;
+
+         
+         if (Quantidade10 == 0) {
+           pizzapedida10.innerHTML = "";
+         }
+       })
+
+})
+
+
+pi_frangokatu.addEventListener('click',()=>{
+
+pizzapedida11.innerHTML=` <span id='menos11' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaFrangokatupiri.nome,lista.pizzaFrangokatupiri.img,lista.pizzaFrangokatupiri.descricao,lista.pizzaFrangokatupiri.preco)} <span class="botaox" id="quantidadeFinal11"> </span>`;
+
+let quantidadeFinal11 = document.querySelector("#quantidadeFinal11");
+   quantidadeFinal11.innerHTML = ++Quantidade11;
+
+
+   resultado.value -= lista.pizzaFrangokatupiri.preco * -1;
+   
+   valor.innerHTML = skils.moeda(resultado.value);
+
+    let botaomenos = document.querySelector('#menos11')
+
+       botaomenos.addEventListener("click", function(){
+
+         resultado.value -= lista.pizzaFrangokatupiri.preco;
+
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
+
+         quantidadeFinal11.innerHTML = --Quantidade11;
+
+         
+         if (Quantidade11 == 0) {
+           pizzapedida11.innerHTML = "";
+         }
+       })
+
+})
+
+pi_mussarela.addEventListener('click',()=>{
+  pizzapedida12.innerHTML=` <span id='menos12' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaMussarela.nome,lista.pizzaMussarela.img,lista.pizzaMussarela.descricao,lista.pizzaMussarela.preco)} <span class="botaox" id="quantidadeFinal12"> </span>`;
+
+let quantidadeFinal12 = document.querySelector("#quantidadeFinal12");
+   quantidadeFinal12.innerHTML = ++Quantidade12;
+
+
+   resultado.value -= lista.pizzaMussarela.preco * -1;
+   
+   valor.innerHTML = skils.moeda(resultado.value);
+
+    let botaomenos = document.querySelector('#menos12')
+
+       botaomenos.addEventListener("click", function(){
+
+         resultado.value -= lista.pizzaMussarela.preco;
+
+         valor.innerHTML = skils.moeda(resultado.value); // a função moeda modifica o valor para moeda corrente
+
+         quantidadeFinal12.innerHTML = --Quantidade12;
+
+         
+         if (Quantidade12 == 0) {
+           pizzapedida12.innerHTML = "";
+         }
+       })
+
+
+})
