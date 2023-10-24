@@ -210,8 +210,6 @@ let quantidadeFinal = document.querySelector("#quantidadeFinal");
        })
 })
 
-
-
 pi_Queijos.addEventListener("click", function () {
 
   pizzaPedida2.innerHTML =`<span id='menos1' class="material-symbols-outlined">disabled_by_default</span> ${skils.listaNNova(lista.pizzaQqueijos.nome,lista.pizzaQqueijos.img,lista.pizzaQqueijos.descricao,lista.pizzaQqueijos.preco)}<span class="botaox" id="quantidadeFinal2"> </span>`;
@@ -241,7 +239,6 @@ pi_Queijos.addEventListener("click", function () {
        })
 
 });
-
 
 pi_marguerita.addEventListener("click", function(){
 
@@ -366,7 +363,6 @@ pi_paraense.addEventListener('click',()=>{
        })
 
 })
-
 
 pi_palmito.addEventListener('click',()=>{
 
@@ -613,7 +609,6 @@ let quantidadeFinal10 = document.querySelector("#quantidadeFinal10");
        })
 
 })
-
 
 pi_cheda.addEventListener('click',()=>{
 
