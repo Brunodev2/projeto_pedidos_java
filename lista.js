@@ -37,6 +37,13 @@ let mista = new pizzas('Mista','#','molho, presunto, queijo, cebola, tomate', 32
 let mussarela = new pizzas('Mussarela','#','molho, queijo mussarela, tomate cereja, aceitona', 31)
 let presunto = new pizzas('Presunto','#','presunto, molho, queijo, cebola, aceitona',33)
 let frango_katupiri = new pizzas('Frango com katupiri','#','frango desfiado, katupiri, molho, cebola, queijo,',34)
+//ingredientes extras
+let queijo = new pizzas('Queijo', 5)
+let presuntoExtra = new pizzas('presunto', 4)
+let tomatecereja = new pizzas("Tomate cereja", 3);
+let molho = new pizzas("Molho", 3);
+let azeitona = new pizzas("Azeitona", 3);
+let Borda = new pizzas("Borda recheada katupiri", 7);
 
 
 //portuguesa.nome = 'quatro queijos'
@@ -60,6 +67,7 @@ export default{
     pizzaMussarela:mussarela,
     pizzaPresunto:presunto,
     pizzaMista:mista
+    // ingredientes extras 
 
 }
 
